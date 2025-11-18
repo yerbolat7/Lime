@@ -1,0 +1,37 @@
+:root{
+  --bg:#f3efe8;
+  --card:#fff;
+  --muted:#6b7280;
+  --accent:#b45309;
+  --wood:#5b3a21;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,Arial,Helvetica,sans-serif;margin:0;background:linear-gradient(180deg,var(--bg),#efe8df);}
+.container{max-width:1100px;margin:24px auto;padding:16px}
+header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#fb923c);display:flex;align-items:center;justify-content:center;color:white;font-weight:800;font-size:20px}
+.lead{margin:4px 0 0;color:var(--muted);font-size:13px}
+.actions{display:flex;gap:10px;align-items:center}
+#search{padding:10px 12px;border-radius:8px;border:1px solid rgba(0,0,0,0.06);width:220px}
+button.ghost{background:transparent;border:1px solid rgba(0,0,0,0.06);padding:8px;border-radius:8px;cursor:pointer}
+
+aside#sidebar{margin-top:18px;display:flex;gap:8px;flex-wrap:wrap}
+.cat{padding:8px 12px;border-radius:999px;background:#fff;border:1px solid #eee;cursor:pointer}
+.cat.active{background:var(--wood);color:white;border-color:transparent}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;margin-top:18px}
+.card{background:var(--card);border-radius:12px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,0.06);display:flex;flex-direction:column;border-left:6px solid var(--accent)}
+.thumb{height:140px;object-fit:cover;width:100%;display:block;background:#f0f0f0}
+.info{padding:12px;flex:1;display:flex;flex-direction:column}
+.name{font-weight:700;margin:0 0 6px}
+.desc{font-size:13px;color:var(--muted);margin:0 0 8px}
+.row{display:flex;justify-content:space-between;align-items:center;margin-top:auto}
+.price{font-weight:800;color:var(--wood)}
+
+footer{margin:30px 0 0;color:var(--muted);font-size:13px;text-align:center}
+
+/* dark theme */
+body.dark{background:#0b0f10;color:#e6e6e6}
+body.dark .card{background:#0f1720;color:#e6e6e6}
+body.dark .cat.active{background:#111827}

@@ -1,0 +1,765 @@
+const menuData = [
+  {
+    "id": 1,
+    "name": "Стейк рибай с костным жиром",
+    "price": 8000,
+    "category": "Вторые блюда",
+    "image": ""
+  },
+  {
+    "id": 2,
+    "name": "Говяжий гриль",
+    "price": 3000,
+    "category": "Вторые блюда",
+    "image": ""
+  },
+  {
+    "id": 3,
+    "name": "Куриный гриль",
+    "price": 3000,
+    "category": "Вторые блюда",
+    "image": ""
+  },
+  {
+    "id": 4,
+    "name": "Бефстроганов из говядины с грибами",
+    "price": 2500,
+    "category": "Вторые блюда",
+    "image": ""
+  },
+  {
+    "id": 5,
+    "name": "Мясо по-тайски",
+    "price": 1800,
+    "category": "Вторые блюда",
+    "image": ""
+  },
+  {
+    "id": 6,
+    "name": "Куырдак из баранины",
+    "price": 3000,
+    "category": "Вторые блюда",
+    "image": ""
+  },
+  {
+    "id": 7,
+    "name": "Куырдак из конины",
+    "price": 2700,
+    "category": "Вторые блюда",
+    "image": ""
+  },
+  {
+    "id": 8,
+    "name": "Плов",
+    "price": 1700,
+    "category": "Вторые блюда",
+    "image": ""
+  },
+  {
+    "id": 9,
+    "name": "Манты",
+    "price": 700,
+    "category": "Вторые блюда",
+    "image": ""
+  },
+  {
+    "id": 10,
+    "name": "Гуйру (лагман)",
+    "price": 2300,
+    "category": "Вторые блюда",
+    "image": ""
+  },
+  {
+    "id": 11,
+    "name": "Курица с грибами в сливочном соусе",
+    "price": 2500,
+    "category": "Вторые блюда",
+    "image": ""
+  },
+  {
+    "id": 12,
+    "name": "Требуха",
+    "price": 2500,
+    "category": "Вторые блюда",
+    "image": ""
+  },
+  {
+    "id": 13,
+    "name": "Стейк из лосося",
+    "price": 4000,
+    "category": "Рыбные блюда",
+    "image": ""
+  },
+  {
+    "id": 14,
+    "name": "Судак в хрустящем кляре",
+    "price": 3500,
+    "category": "Рыбные блюда",
+    "image": ""
+  },
+  {
+    "id": 15,
+    "name": "Рыба жареная",
+    "price": 3500,
+    "category": "Рыбные блюда",
+    "image": ""
+  },
+  {
+    "id": 16,
+    "name": "Куриные крылышки",
+    "price": 2300,
+    "category": "Горячие закуски",
+    "image": ""
+  },
+  {
+    "id": 17,
+    "name": "Сырные палочки с чесночным соусом",
+    "price": 2000,
+    "category": "Горячие закуски",
+    "image": ""
+  },
+  {
+    "id": 18,
+    "name": "Хрустящие креветки",
+    "price": 3500,
+    "category": "Горячие закуски",
+    "image": ""
+  },
+  {
+    "id": 19,
+    "name": "Пивной сет",
+    "price": 4000,
+    "category": "Горячие закуски",
+    "image": ""
+  },
+  {
+    "id": 20,
+    "name": "Мясное ассорти",
+    "price": 6000,
+    "category": "Холодные закуски",
+    "image": ""
+  },
+  {
+    "id": 21,
+    "name": "Рыбное ассорти",
+    "price": 6000,
+    "category": "Холодные закуски",
+    "image": ""
+  },
+  {
+    "id": 22,
+    "name": "Куриное ассорти",
+    "price": 5000,
+    "category": "Холодные закуски",
+    "image": ""
+  },
+  {
+    "id": 23,
+    "name": "Закуска к водке",
+    "price": 2500,
+    "category": "Холодные закуски",
+    "image": ""
+  },
+  {
+    "id": 24,
+    "name": "Греческий салат",
+    "price": 1800,
+    "category": "Салаты",
+    "image": ""
+  },
+  {
+    "id": 25,
+    "name": "Цезарь с куриным филе",
+    "price": 2100,
+    "category": "Салаты",
+    "image": ""
+  },
+  {
+    "id": 26,
+    "name": "Цезарь с креветками",
+    "price": 2500,
+    "category": "Салаты",
+    "image": ""
+  },
+  {
+    "id": 27,
+    "name": "Горячий салат",
+    "price": 2000,
+    "category": "Салаты",
+    "image": ""
+  },
+  {
+    "id": 28,
+    "name": "Салат Лайм",
+    "price": 2500,
+    "category": "Салаты",
+    "image": ""
+  },
+  {
+    "id": 29,
+    "name": "Фруктовый салат",
+    "price": 1600,
+    "category": "Салаты",
+    "image": ""
+  },
+  {
+    "id": 30,
+    "name": "Свежий салат",
+    "price": 1500,
+    "category": "Салаты",
+    "image": ""
+  },
+  {
+    "id": 31,
+    "name": "Аврора (острый)",
+    "price": 1800,
+    "category": "Салаты",
+    "image": ""
+  },
+  {
+    "id": 32,
+    "name": "Ачучук",
+    "price": 1500,
+    "category": "Салаты",
+    "image": ""
+  },
+  {
+    "id": 33,
+    "name": "Витаминный с апельсином и рукколой",
+    "price": 2500,
+    "category": "Салаты",
+    "image": ""
+  },
+  {
+    "id": 34,
+    "name": "Мужской каприз",
+    "price": 2000,
+    "category": "Салаты",
+    "image": ""
+  },
+  {
+    "id": 35,
+    "name": "Овощной с морепродуктами",
+    "price": 3500,
+    "category": "Салаты",
+    "image": ""
+  },
+  {
+    "id": 36,
+    "name": "Овощная нарезка",
+    "price": 2500,
+    "category": "Салаты",
+    "image": ""
+  },
+  {
+    "id": 37,
+    "name": "Хрустящие баклажаны",
+    "price": 2100,
+    "category": "Салаты",
+    "image": ""
+  },
+  {
+    "id": 38,
+    "name": "Салат Зебра",
+    "price": 2500,
+    "category": "Салаты",
+    "image": ""
+  },
+  {
+    "id": 39,
+    "name": "Салат брокколи с языком",
+    "price": 2800,
+    "category": "Салаты",
+    "image": ""
+  },
+  {
+    "id": 40,
+    "name": "Салат Рафаэло",
+    "price": 2200,
+    "category": "Салаты",
+    "image": ""
+  },
+  {
+    "id": 41,
+    "name": "Пепперони",
+    "price": 2200,
+    "category": "Пицца",
+    "image": ""
+  },
+  {
+    "id": 42,
+    "name": "Куриная",
+    "price": 2300,
+    "category": "Пицца",
+    "image": ""
+  },
+  {
+    "id": 43,
+    "name": "Маргарита",
+    "price": 2000,
+    "category": "Пицца",
+    "image": ""
+  },
+  {
+    "id": 44,
+    "name": "Болоньезе",
+    "price": 2400,
+    "category": "Пицца",
+    "image": ""
+  },
+  {
+    "id": 45,
+    "name": "Четыре сезона",
+    "price": 2500,
+    "category": "Пицца",
+    "image": ""
+  },
+  {
+    "id": 46,
+    "name": "Лайм (пицца)",
+    "price": 2500,
+    "category": "Пицца",
+    "image": ""
+  },
+  {
+    "id": 47,
+    "name": "Цезарь (пицца)",
+    "price": 2500,
+    "category": "Пицца",
+    "image": ""
+  },
+  {
+    "id": 48,
+    "name": "Пицца Чикенито",
+    "price": 2200,
+    "category": "Пицца",
+    "image": ""
+  },
+  {
+    "id": 49,
+    "name": "Хычины с сыром",
+    "price": 2000,
+    "category": "Хычины",
+    "image": ""
+  },
+  {
+    "id": 50,
+    "name": "Хычины с картошкой и сыром",
+    "price": 1800,
+    "category": "Хычины",
+    "image": ""
+  },
+  {
+    "id": 51,
+    "name": "Хачапури по-аджарски",
+    "price": 2200,
+    "category": "Хычины",
+    "image": ""
+  },
+  {
+    "id": 52,
+    "name": "Хачапури с сыром",
+    "price": 2000,
+    "category": "Хычины",
+    "image": ""
+  },
+  {
+    "id": 53,
+    "name": "Ассорти микс",
+    "price": 45000,
+    "category": "Основные блюда",
+    "image": ""
+  },
+  {
+    "id": 54,
+    "name": "Рыба жареная с картошкой",
+    "price": 18000,
+    "category": "Основные блюда",
+    "image": ""
+  },
+  {
+    "id": 55,
+    "name": "Пельмени",
+    "price": 13000,
+    "category": "Основные блюда",
+    "image": ""
+  },
+  {
+    "id": 56,
+    "name": "Мясо по-хански",
+    "price": 12000,
+    "category": "Основные блюда",
+    "image": ""
+  },
+  {
+    "id": 57,
+    "name": "Самса с мясом",
+    "price": 300,
+    "category": "Выпечка",
+    "image": ""
+  },
+  {
+    "id": 58,
+    "name": "Самса с сыром",
+    "price": 200,
+    "category": "Выпечка",
+    "image": ""
+  },
+  {
+    "id": 59,
+    "name": "Самса с курицей",
+    "price": 300,
+    "category": "Выпечка",
+    "image": ""
+  },
+  {
+    "id": 60,
+    "name": "Овощи гриль",
+    "price": 1000,
+    "category": "Овощной шашлык",
+    "image": ""
+  },
+  {
+    "id": 61,
+    "name": "Шампиньоны",
+    "price": 1100,
+    "category": "Овощной шашлык",
+    "image": ""
+  },
+  {
+    "id": 62,
+    "name": "Картофель с курдюком",
+    "price": 1200,
+    "category": "Овощной шашлык",
+    "image": ""
+  },
+  {
+    "id": 63,
+    "name": "Шампиньоны с фаршем",
+    "price": 1500,
+    "category": "Овощной шашлык",
+    "image": ""
+  },
+  {
+    "id": 64,
+    "name": "Ассорти Laim",
+    "price": 14000,
+    "category": "Ассорти",
+    "image": ""
+  },
+  {
+    "id": 65,
+    "name": "Ассорти Marinad (на заказ)",
+    "price": 20000,
+    "category": "Ассорти",
+    "image": ""
+  },
+  {
+    "id": 66,
+    "name": "Шашлык от шефа",
+    "price": 16000,
+    "category": "Ассорти",
+    "image": ""
+  },
+  {
+    "id": 67,
+    "name": "Боржоми",
+    "price": 1000,
+    "category": "Напитки",
+    "image": ""
+  },
+  {
+    "id": 68,
+    "name": "Тассай",
+    "price": 500,
+    "category": "Напитки",
+    "image": ""
+  },
+  {
+    "id": 69,
+    "name": "Кола",
+    "price": 800,
+    "category": "Напитки",
+    "image": ""
+  },
+  {
+    "id": 70,
+    "name": "Фанта",
+    "price": 750,
+    "category": "Напитки",
+    "image": ""
+  },
+  {
+    "id": 71,
+    "name": "Пепси",
+    "price": 800,
+    "category": "Напитки",
+    "image": ""
+  },
+  {
+    "id": 72,
+    "name": "Пико",
+    "price": 1100,
+    "category": "Напитки",
+    "image": ""
+  },
+  {
+    "id": 73,
+    "name": "Макси Чай",
+    "price": 800,
+    "category": "Напитки",
+    "image": ""
+  },
+  {
+    "id": 74,
+    "name": "Лимонад kiwi лайм",
+    "price": 1500,
+    "category": "Лимонады",
+    "image": ""
+  },
+  {
+    "id": 75,
+    "name": "Лимонад Смородина",
+    "price": 1500,
+    "category": "Лимонады",
+    "image": ""
+  },
+  {
+    "id": 76,
+    "name": "Лимонад Яблоко green apple",
+    "price": 1500,
+    "category": "Лимонады",
+    "image": ""
+  },
+  {
+    "id": 77,
+    "name": "Лимонад Kiwi",
+    "price": 1500,
+    "category": "Лимонады",
+    "image": ""
+  },
+  {
+    "id": 78,
+    "name": "Мохито",
+    "price": 1500,
+    "category": "Лимонады",
+    "image": ""
+  },
+  {
+    "id": 79,
+    "name": "Гранат",
+    "price": 1500,
+    "category": "Лимонады",
+    "image": ""
+  },
+  {
+    "id": 80,
+    "name": "Малина",
+    "price": 1500,
+    "category": "Лимонады",
+    "image": ""
+  },
+  {
+    "id": 81,
+    "name": "Арбуз",
+    "price": 1500,
+    "category": "Лимонады",
+    "image": ""
+  },
+  {
+    "id": 82,
+    "name": "Манго микс",
+    "price": 1500,
+    "category": "Лимонады",
+    "image": ""
+  },
+  {
+    "id": 83,
+    "name": "Яблоко тархун микс",
+    "price": 1500,
+    "category": "Лимонады",
+    "image": ""
+  },
+  {
+    "id": 84,
+    "name": "Orange апельсин",
+    "price": 1500,
+    "category": "Лимонады",
+    "image": ""
+  },
+  {
+    "id": 85,
+    "name": "Клубника",
+    "price": 1500,
+    "category": "Лимонады",
+    "image": ""
+  },
+  {
+    "id": 86,
+    "name": "Гранат арбуз микс",
+    "price": 1500,
+    "category": "Лимонады",
+    "image": ""
+  },
+  {
+    "id": 87,
+    "name": "Абсолют 0.5",
+    "price": 9500,
+    "category": "Водка",
+    "image": ""
+  },
+  {
+    "id": 88,
+    "name": "Кызылжар",
+    "price": 5000,
+    "category": "Водка",
+    "image": ""
+  },
+  {
+    "id": 89,
+    "name": "Зеленая марка",
+    "price": 4500,
+    "category": "Водка",
+    "image": ""
+  },
+  {
+    "id": 90,
+    "name": "Nemiroff",
+    "price": 6000,
+    "category": "Водка",
+    "image": ""
+  },
+  {
+    "id": 91,
+    "name": "Русский стандарт",
+    "price": 7000,
+    "category": "Водка",
+    "image": ""
+  },
+  {
+    "id": 92,
+    "name": "Хванчкара",
+    "price": 12000,
+    "category": "Вино",
+    "image": ""
+  },
+  {
+    "id": 93,
+    "name": "Максим",
+    "price": 3000,
+    "category": "Вино",
+    "image": ""
+  },
+  {
+    "id": 94,
+    "name": "Сладость лозы",
+    "price": 3000,
+    "category": "Вино",
+    "image": ""
+  },
+  {
+    "id": 95,
+    "name": "Кагор",
+    "price": 4000,
+    "category": "Вино",
+    "image": ""
+  },
+  {
+    "id": 96,
+    "name": "Jameson 0.5",
+    "price": 16000,
+    "category": "Виски",
+    "image": ""
+  },
+  {
+    "id": 97,
+    "name": "Jack Daniels 0.7",
+    "price": 17000,
+    "category": "Виски",
+    "image": ""
+  },
+  {
+    "id": 98,
+    "name": "Chivas Regal",
+    "price": 20000,
+    "category": "Виски",
+    "image": ""
+  },
+  {
+    "id": 99,
+    "name": "Казахстан 5*",
+    "price": 5500,
+    "category": "Коньяк",
+    "image": ""
+  },
+  {
+    "id": 100,
+    "name": "Арарат",
+    "price": 5500,
+    "category": "Коньяк",
+    "image": ""
+  },
+  {
+    "id": 101,
+    "name": "Жеңіс",
+    "price": 17000,
+    "category": "Коньяк",
+    "image": ""
+  }
+];
+
+let state = { filter: 'Все', query: '' };
+
+function uniqueCategories(data) {
+  const cats = Array.from(new Set(data.map(d=>d.category))).sort();
+  return ['Все', ...cats];
+}
+
+function formatPrice(n) { return n.toLocaleString('ru-RU') + ' ₸'; }
+
+function renderCategories() {
+  const sidebar = document.getElementById('sidebar');
+  sidebar.innerHTML = '';
+  uniqueCategories(menuData).forEach(cat=>{
+    const btn = document.createElement('button');
+    btn.className = 'cat' + (state.filter===cat ? ' active' : '');
+    btn.textContent = cat;
+    btn.onclick = ()=>{ state.filter = cat; renderCategories(); renderGrid(); };
+    sidebar.appendChild(btn);
+  });
+}
+
+function filtered() {
+  return menuData.filter(d=>{
+    if(state.filter !== 'Все' && d.category !== state.filter) return false;
+    if(state.query && !d.name.toLowerCase().includes(state.query.toLowerCase())) return false;
+    return true;
+  });
+}
+
+function renderGrid() {
+  const grid = document.getElementById('grid'); grid.innerHTML = '';
+  const items = filtered();
+  if(items.length===0){ grid.innerHTML = '<p style="color:var(--muted)">Ничего не найдено.</p>'; return; }
+  items.forEach(d=>{
+    const card = document.createElement('article'); card.className='card';
+    const thumb = document.createElement('div'); thumb.className='thumb';
+    thumb.textContent = '';
+    const info = document.createElement('div'); info.className='info';
+    const name = document.createElement('h4'); name.className='name'; name.textContent = d.name;
+    const desc = document.createElement('div'); desc.className='desc'; desc.textContent = d.category;
+    const row = document.createElement('div'); row.className='row';
+    const price = document.createElement('div'); price.className='price'; price.textContent = formatPrice(d.price);
+    const add = document.createElement('button'); add.className='btn'; add.textContent = 'Добавить';
+    add.onclick = ()=>alert('Добавлено: ' + d.name);
+    row.appendChild(price); row.appendChild(add);
+    info.appendChild(name); info.appendChild(desc); info.appendChild(row);
+    card.appendChild(thumb); card.appendChild(info);
+    grid.appendChild(card);
+  });
+}
+
+document.getElementById('search').addEventListener('keypress', e=>{ if(e.key==='Enter'){ state.query = e.target.value.trim(); renderGrid(); }});
+document.getElementById('toggleTheme').addEventListener('click', ()=>document.body.classList.toggle('dark'));
+
+renderCategories(); renderGrid();
